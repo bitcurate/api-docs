@@ -2,13 +2,13 @@
 
 *This is a living document, subject to change as more information becomes available, or changes in external and internal conditions create the need for revision. Figures are rough estimations until the final version is created.*
 
-# Bitcurate REST API Documentation
+# Bitcurate API Documentation
 
 At the current stage of Bitcurate Beta test we provide data via API requests only, we are working hard on web interface and analytics dashboard which are going to be available soon, please stay tuned for more updates.
 
 ## Current version
 
-Currently we are working on v1 implementation, it's still work in progress and more features will be available in the future. 
+Currently we are working on v1 implementation, it's still work in progress and more features will be available in the future.
 
 ## Access
 
@@ -84,7 +84,7 @@ request example:
 
 responce example:
 ```
-{"name":"BTC/USDT",   
+{"name":"BTC/USDT",
  "exchange":"binance",
  "ask":3991.3,
  "average":0,
