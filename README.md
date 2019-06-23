@@ -5,5 +5,5 @@
 
 Name | Description
 ------------ | ------------ 
-[api.md](./api_v1.md) | Details on the API (/api)
-[streams.md](./streams.md) | Details on available streams and payloads
+[api/v1](./api_v1.md) | Details on the API v1 (/api)
+[streams](./streams.md) | Details on available streams and payloads
