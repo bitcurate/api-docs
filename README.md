@@ -6,4 +6,3 @@
 Name | Description
 ------------ | ------------ 
 [api/v1](./api_v1.md) | Details on the API v1 (/api)
-[streams](./streams.md) | Details on available streams and payloads
