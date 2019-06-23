@@ -71,19 +71,10 @@ request example:
 
 responce example:
 ```
-{"name":"BTC/USDT",
- "exchange":"binance",
- "ask":3991.3,
- "average":0,
- "bid":3990.09,
- "change":9.75,
- "open":0,
- "high":0,
- "low":0,
- "last":3991.3,
- "percentage":0.245,
- "utc":"2019-03-25T07:04:29",
- "timestamp":1553497469687}
+[
+{"name":"ETH/USDT","exchange":"binance","ask":315.08,"average":0,"bid":315.06,"change":9.94,"open":0,"high":0,"low":0,"last":315.06,"percentage":3.258,"utc":"2019-06-23T05:15:41","timestamp":1561266941868},
+{"name":"ETH/USDT","exchange":"binance","ask":315.08,"average":0,"bid":315.06,"change":9.94,"open":0,"high":0,"low":0,"last":315.06,"percentage":3.258,"utc":"2019-06-23T05:15:41","timestamp":1561266941868}
+]
 ```
 
 ### Coin data
