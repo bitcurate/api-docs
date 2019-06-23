@@ -5,18 +5,18 @@
 # Bitcurate API Documentation
 Currently we are working on v1 implementation, it's still work in progress and more features will be available in the future.
 
-# General API Information
+## General API Information
 * The base endpoint is: **https://api.bitcurate.com**
 * All endpoints return either a JSON object or array.
 * Data is returned in **ascending** order. Oldest first, newest last.
 * HTTP `4XX` return codes are used for for malformed requests;
   the issue is on the sender's side.
 * HTTP `5XX` return codes are used for internal errors; the issue is on
-  Binance's side.
+  Bitcurate's side.
 * For `POST` endpoints, the parameters must be sent in the `request body` with content type
   `application/application/json`.
 
-# Access
+## Access
 For access to api endpoints please register at `https://bitcurate.com`
 After the email confirmaton, you will be able to use your API credentials.
 
