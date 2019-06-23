@@ -57,8 +57,10 @@ responce example:
 }
 ```
 
-### Coin pair data
+### Data stream
+⚠️⚠️⚠️ WORK IN PROGRESS ⚠️⚠️⚠️
 
+### Coin pair data
 To get coin pair data make GET request to\
 `https://api.bitcurate.com/api/v1/<exchange_name>/<pair_name>/latest`
 where `<exchange_name>` - is the name of the exchange from result of `https://api.bitcurate.com/api/v1/exchanges` request
