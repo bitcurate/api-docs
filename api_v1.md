@@ -3,24 +3,30 @@
 *This is a living document, subject to change as more information becomes available, or changes in external and internal conditions create the need for revision. Figures are rough estimations until the final version is created.*
 
 # Bitcurate API Documentation
-
-At the current stage of Bitcurate Beta test we provide data via API requests only, we are working hard on web interface and analytics dashboard which are going to be available soon, please stay tuned for more updates.
-
-## Current version
-
 Currently we are working on v1 implementation, it's still work in progress and more features will be available in the future.
 
-## Access
+# General API Information
+* The base endpoint is: **https://api.bitcurate.com**
+* All endpoints return either a JSON object or array.
+* Data is returned in **ascending** order. Oldest first, newest last.
+* HTTP `4XX` return codes are used for for malformed requests;
+  the issue is on the sender's side.
+* HTTP `5XX` return codes are used for internal errors; the issue is on
+  Binance's side.
+* For `POST` endpoints, the parameters must be sent in the `request body` with content type
+  `application/application/json`.
 
+# Access
 For access to api endpoints please register at `https://bitcurate.com`
-After the email confirmaton, you will recieve an email with your API credentials.
+After the email confirmaton, you will be able to use your API credentials.
 
 In order to get access token you would need to make POST request to `https://api.bitcurate.com/api/v1/login`
-with the request body `{"login": "user@example.com", "password": "your_password_from_letter_here"}`
+with the request body `{"login": "user@example.com", "password": "your_password_here"}`
 
 After recieving the token you can make requests to API with the header `Authorization: Bearer YOUR_TOKEN`
 where `YOUR_TOKEN` - is your token from the login endpoint. Token is valid for one month during the beta testing period.
 You would need to update your token after the expiration date.
+
 
 ## Endpoints
 
