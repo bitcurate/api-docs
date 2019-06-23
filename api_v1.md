@@ -20,7 +20,7 @@ Currently we are working on v1 implementation, it's still work in progress and m
 For access to api endpoints please register at `https://bitcurate.com`. After the email confirmaton, you will be able to use your API credentials.
 
 In order to get access token you would need to make POST request to `https://api.bitcurate.com/api/v1/login`\
-with the request body `{"login": "user@example.com", "password": "your_password_here"}`
+with the request body `{"login": "your_email_here", "password": "your_password_here"}`
 
 After recieving the token you can make requests to API with the header `Authorization: Bearer YOUR_TOKEN`\
 where `YOUR_TOKEN` - is your token from the login endpoint. Token is valid for one month during the beta testing period.
@@ -28,11 +28,10 @@ You would need to update your token after the expiration date.
 
 
 ## Endpoints
-### Available exchanges
 
+### Available exchanges
 To get the list of all available exchanges, pairs, and coins make GET request to\
 `https://api.bitcurate.com/api/v1/exchanges`
-
 responce example:
 ```
 {
@@ -57,36 +56,6 @@ responce example:
   ]
 }
 ```
-
-
----------------------------------
-### Available coin pairs
-
-Ro get the list of all available coin pairs, for a particular exchange make GET requests to\
-`https://api.bitcurate.com/api/v1/<exchange_name>/pairs`
-Where <exchange_name> - is the name of exchange from result of `https://api.bitcurate.com/api/v1/exchanges` request
-
-request example:
-`https://api.bitcurate.com/api/v1/binance/pairs`
-
-responce example:
-```
-[{"name":"ada_bnb"},
- {"name":"ada_btc"},
- {"name":"ada_eth"},
- {"name":"ada_usdt"},
- {"name":"adx_bnb"},
- {"name":"adx_btc"},
- {"name":"adx_eth"},
- {"name":"ae_bnb"},
- {"name":"ae_btc"},
- {"name":"ae_eth"},
- {"name":"agi_bnb"},
- {"name":"agi_btc"},
- {"name":"agi_eth"},
- {"name":"aion_bnb"},
- {"name":"aion_btc"} ...}]
- ```
 
 ### Coin pair data
 
@@ -114,35 +83,7 @@ responce example:
  "utc":"2019-03-25T07:04:29",
  "timestamp":1553497469687}
 ```
-### Available coins
 
-to get all available coins make GET request to\
-`https://api.bitcurate.com/api/v1/coins`
-
-responce example:
-```
-[{"name":"basic_attention_token"},
- {"name":"binance_coin"},
- {"name":"bitcoin"},
- {"name":"bitcoin_cash"},
- {"name":"bitcoin_gold"},
- {"name":"bitcoin_sv"},
- {"name":"cardano"},
- {"name":"chainlink"},
- {"name":"crypto_com_chain"},
- {"name":"dash"},
- {"name":"decred"},
- {"name":"dogecoin"},
- {"name":"eos"},
- {"name":"ethereum"},
- {"name":"ethereum_classic"},
- {"name":"iota"},
- {"name":"lisk"},
- {"name":"litecoin"},
- {"name":"maker"},
- {"name":"monero"},
- {"name":"nem", ...}
-```
 ### Coin data
 
 to get coin data make GET request to\
