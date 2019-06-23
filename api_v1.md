@@ -62,7 +62,7 @@ responce example:
 ### Latest data
 To get latest data for coin pair make GET request to\
 `https://api.bitcurate.com/api/v1/<exchange_name>/<pair_name>/latest`\
-where `<exchange_name>` is the name of the exchange from result of `https://api.bitcurate.com/api/v1/exchanges` and `<pair_name>` - is the pair of coin names from result of `https://api.bitcurate.com/api/v1/exchanges`, separated by "_".
+where `<exchange_name>` is the name of the exchange from result of `https://api.bitcurate.com/api/v1/exchanges` and `<pair_name>` - is the pair of coin names from result of `https://api.bitcurate.com/api/v1/exchanges`, separated with "_".
 
 request example:
  `https://api.bitcurate.com/api/v1/binance/eth_usdt/latest`
@@ -90,7 +90,7 @@ responce example:
 ### Historical data
 To get historical data for coin pair make GET request to\
 `https://api.bitcurate.com/api/v1/<exchange_name>/<pair_name>/history/<delta>`\
-where `<exchange_name>` is the name of the exchange from result of `https://api.bitcurate.com/api/v1/exchanges` and `<pair_name>` - is the pair of coin names from result of `https://api.bitcurate.com/api/v1/exchanges`, separated by "_",
+where `<exchange_name>` is the name of the exchange from result of `https://api.bitcurate.com/api/v1/exchanges` and `<pair_name>` - is the pair of coin names from result of `https://api.bitcurate.com/api/v1/exchanges`, separated with "_",
 and `<delta>` - is the time range in seconds
 
 request example:
@@ -134,31 +134,6 @@ responce example:
 ]
 ```
 
-### Coin data
-to get coin data make GET request to\
-`https://api.bitcurate.com/api/v1/<coin_name>/latest`
-
-where `<coin_name>` - is the name of the coin from `https://api.bitcurate.com/api/v1/coins` request
-
-request example:
-`https://api.bitcurate.com/api/v1/Ethereum/latest`
-
-responce example:
-```
-{"name":"Ethereum",
- "slug":"ethereum",
- "circulating_supply":105310732.3741,
- "total_supply":105310732.3741,
- "max_supply":0,
- "rank":2,
- "price":139.050992627,
- "volume_24h":4338628958.45959,
- "change_1h":0.0060562,
- "change_24h":-0.278413,
- "change_7d":4.13387,
- "market_cap":14643561870.894949,
- "timestamp":1553065639}
-```
 ### Price prediction
 
 ⚠️⚠️⚠️ DISCLAIMER: prediction is currently at the test stage, we provide prediction only for `LTC/BTC` trading pair, more pairs are comming soon, stay tuned ⚠️⚠️⚠️
