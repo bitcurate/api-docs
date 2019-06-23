@@ -19,8 +19,7 @@ Currently we are working on v1 implementation, it's still work in progress and m
 ## Access
 For access to api endpoints please register at `https://bitcurate.com`. After the email confirmaton, you will be able to use your API credentials.
 
-In order to get access token you would need to make POST request to\
-`https://api.bitcurate.com/api/v1/login`\
+In order to get access token you would need to make POST request to `https://api.bitcurate.com/api/v1/login`\
 with the request body `{"login": "user@example.com", "password": "your_password_here"}`
 
 After recieving the token you can make requests to API with the header `Authorization: Bearer YOUR_TOKEN`\
