@@ -14,7 +14,7 @@ Currently we are working on v1 implementation, it's still work in progress and m
 * HTTP `5XX` return codes are used for internal errors; the issue is on
   Bitcurate's side.
 * For `POST` endpoints, the parameters must be sent in the `request body` with content type
-  `application/application/json`.
+  `application/json`.
 
 ## Access
 For access to api endpoints please register at `https://bitcurate.com`
