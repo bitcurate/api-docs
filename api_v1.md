@@ -62,7 +62,7 @@ responce example:
 ### Latest data
 To get latest data for coin pair make GET request to\
 `https://api.bitcurate.com/api/v1/<exchange_name>/<pair_name>/latest`\
-where `<exchange_name>` and `<pair_name>` - is the name of the exchange and pair from result of `https://api.bitcurate.com/api/v1/exchanges`
+where `<exchange_name>` is the name of the exchange from result of `https://api.bitcurate.com/api/v1/exchanges` and `<pair_name>` - is the pair of coin names from result of `https://api.bitcurate.com/api/v1/exchanges`, separated by "_".
 
 request example:
  `https://api.bitcurate.com/api/v1/binance/eth_usdt/latest`
@@ -90,7 +90,7 @@ responce example:
 ### Historical data
 To get historical data for coin pair make GET request to\
 `https://api.bitcurate.com/api/v1/<exchange_name>/<pair_name>/history/<delta>`\
-where `<exchange_name>` and `<pair_name>` - is the name of the exchange and pair from result of `https://api.bitcurate.com/api/v1/exchanges` 
+where `<exchange_name>` is the name of the exchange from result of `https://api.bitcurate.com/api/v1/exchanges` and `<pair_name>` - is the pair of coin names from result of `https://api.bitcurate.com/api/v1/exchanges`, separated by "_",
 and `<delta>` - is the time range in milliseconds
 
 request example:
