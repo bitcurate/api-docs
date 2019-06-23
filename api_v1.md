@@ -29,7 +29,7 @@ You would need to update your token after the expiration date.
 
 ### Available exchanges
 To get the list of all available exchanges, pairs, and coins make GET request to\
-`https://api.bitcurate.com/api/v1/exchanges`
+`https://api.bitcurate.com/api/v1/exchanges`\
 responce example:
 ```
 {
