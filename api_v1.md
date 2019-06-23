@@ -34,7 +34,12 @@ To get the list of all available exchanges make GET request to\
 `https://api.bitcurate.com/api/v1/exchanges`
 
 responce example:
-```{"exchanges":[{"id":"1","name":"binance","pairs":["1","4"],"coins":["1","2","5"]},{"id":"2","name":"kraken","pairs":["3"],"coins":["1","4"]},{"id":"3","name":"coinbase","pairs":["2"],"coins":["1","5"]},{"id":"4","name":"bitstamp","pairs":[],"coins":[]}],"pairs":[{"id":"1","coins":["1","5"]},{"id":"2","coins":["1","5"]},{"id":"3","coins":["1","4"]},{"id":"4","coins":["2","5"]}],"coins":[{"id":"1","name":"eth"},{"id":"2","name":"btc"},{"id":"3","name":"ltc"},{"id":"4","name":"usd"},{"id":"5","name":"usdt"}]}
+```
+{
+  "exchanges":[{"id":"1","name":"binance","pairs":["1","4"],"coins":["1","2","5"]},{"id":"2","name":"kraken","pairs":["3"],"coins":["1","4"]},{"id":"3","name":"coinbase","pairs":["2"],"coins":["1","5"]},{"id":"4","name":"bitstamp","pairs":[],"coins":[]}],
+  "pairs":[{"id":"1","coins":["1","5"]},{"id":"2","coins":["1","5"]},{"id":"3","coins":["1","4"]},{"id":"4","coins":["2","5"]}],
+  "coins":[{"id":"1","name":"eth"},{"id":"2","name":"btc"},{"id":"3","name":"ltc"},{"id":"4","name":"usd"},{"id":"5","name":"usdt"}]
+}
 ```
 
 
