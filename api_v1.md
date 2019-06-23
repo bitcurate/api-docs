@@ -139,7 +139,6 @@ responce example:
 
 To get the price prediction for a coin pair make GET request to\
 `https://api.bitcurate.com/api/v1/forecast/<pair_name>`
-
 where `<pair_name>` - is the pair of coin names from result of `https://api.bitcurate.com/api/v1/exchanges`, separated with "_"
 
 request example:
