@@ -1,9 +1,7 @@
+# Bitcurate API Documentation
 ⚠️⚠️⚠️ WORK IN PROGRESS ⚠️⚠️⚠️
 
 *This is a living document, subject to change as more information becomes available, or changes in external and internal conditions create the need for revision. Figures are rough estimations until the final version is created.*
-
-# Bitcurate API Documentation
-Currently we are working on v1 implementation, it's still work in progress and more features will be available in the future.
 
 ## General API Information
 * The base endpoint is: **https://api.bitcurate.com**
@@ -67,12 +65,27 @@ where `<exchange_name>` and `<pair_name>` - is the name of the exchange and pair
 and `<delta>` - is the time range in milliseconds
 
 request example:
- `https://api.bitcurate.com/api/v1/binance/eth_usdt/history/100`
+ `https://api.bitcurate.com/api/v1/binance/eth_usdt/history/1000`
 
 responce example:
 ```
 [
-{"name":"ETH/USDT","exchange":"binance","ask":315.08,"average":0,"bid":315.06,"change":9.94,"open":0,"high":0,"low":0,"last":315.06,"percentage":3.258,"utc":"2019-06-23T05:15:41","timestamp":1561266941868},
+{
+"name":"ETH/USDT",
+"exchange":
+"binance",
+"ask":315.08,
+"average":0,
+"bid":315.06,
+"change":9.94,
+"open":0,
+"high":0,
+"low":0,
+"last":315.06,
+"percentage":3.258,
+"utc":"2019-06-23T05:15:41",
+"timestamp":1561266941868},
+
 {"name":"ETH/USDT","exchange":"binance","ask":315.08,"average":0,"bid":315.06,"change":9.94,"open":0,"high":0,"low":0,"last":315.06,"percentage":3.258,"utc":"2019-06-23T05:15:41","timestamp":1561266941868}
 ]
 ```
