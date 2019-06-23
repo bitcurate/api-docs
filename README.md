@@ -6,5 +6,4 @@
 Name | Description
 ------------ | ------------ 
 [api.md](./api_v1.md) | Details on the API (/api)
-[errors.md](./errors.md) | Descriptions of possible error messages from the API
 [streams.md](./streams.md) | Details on available streams and payloads
