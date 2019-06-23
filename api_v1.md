@@ -60,14 +60,14 @@ responce example:
 ### Data stream
 ⚠️⚠️⚠️ WORK IN PROGRESS ⚠️⚠️⚠️
 
-### Coin pair data
-To get coin pair data make GET request to\
-`https://api.bitcurate.com/api/v1/<exchange_name>/<pair_name>/latest`
-where `<exchange_name>` - is the name of the exchange from result of `https://api.bitcurate.com/api/v1/exchanges` request
-and `<pair_name>` - is the name of coin pair from the result of `https://api.bitcurate.com/api/v1/<exchange-name>/pairs` request
+### Historical data
+To get historical data for coin pair make GET request to\
+`https://api.bitcurate.com/api/v1/<exchange_name>/<pair_name>/history/<delta>`\
+where `<exchange_name>` and `<pair_name>` - is the name of the exchange and pair from result of `https://api.bitcurate.com/api/v1/exchanges` 
+and `<delta>` - is the time range in milliseconds
 
 request example:
- `https://api.bitcurate.com/api/v1/binance/btc_usdt/latest`
+ `https://api.bitcurate.com/api/v1/binance/eth_usdt/history/100`
 
 responce example:
 ```
