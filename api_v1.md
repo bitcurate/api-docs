@@ -17,7 +17,7 @@ Currently we are working on v1 implementation, it's still work in progress and m
   `application/json`.
 
 ## Access
-For access to api endpoints please register at `https://bitcurate.com`
+For access to api endpoints please register at `https://bitcurate.com`.\
 After the email confirmaton, you will be able to use your API credentials.
 
 In order to get access token you would need to make POST request to `https://api.bitcurate.com/api/v1/login`
