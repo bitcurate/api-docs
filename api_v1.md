@@ -91,7 +91,7 @@ responce example:
 To get historical data for coin pair make GET request to\
 `https://api.bitcurate.com/api/v1/<exchange_name>/<pair_name>/history/<delta>`\
 where `<exchange_name>` is the name of the exchange from result of `https://api.bitcurate.com/api/v1/exchanges` and `<pair_name>` - is the pair of coin names from result of `https://api.bitcurate.com/api/v1/exchanges`, separated by "_",
-and `<delta>` - is the time range in milliseconds
+and `<delta>` - is the time range in seconds
 
 request example:
  `https://api.bitcurate.com/api/v1/binance/eth_usdt/history/1000`
@@ -135,7 +135,6 @@ responce example:
 ```
 
 ### Coin data
-
 to get coin data make GET request to\
 `https://api.bitcurate.com/api/v1/<coin_name>/latest`
 
