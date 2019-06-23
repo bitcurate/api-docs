@@ -58,6 +58,34 @@ responce example:
 ### Data stream
 ⚠️⚠️⚠️ WORK IN PROGRESS ⚠️⚠️⚠️
 
+### Latest data
+To get latest data for coin pair make GET request to\
+`https://api.bitcurate.com/api/v1/<exchange_name>/<pair_name>/latest`\
+where `<exchange_name>` and `<pair_name>` - is the name of the exchange and pair from result of `https://api.bitcurate.com/api/v1/exchanges`
+
+request example:
+ `https://api.bitcurate.com/api/v1/binance/eth_usdt/latest`
+
+responce example:
+```
+  {
+    "name":"ETH/USDT",
+    "exchange":
+    "binance",
+    "ask":315.08,
+    "average":0,
+    "bid":315.06,
+    "change":9.94,
+    "open":0,
+    "high":0,
+    "low":0,
+    "last":315.06,
+    "percentage":3.258,
+    "utc":"2019-06-23T05:15:41",
+    "timestamp":1561266941868
+  }
+```
+
 ### Historical data
 To get historical data for coin pair make GET request to\
 `https://api.bitcurate.com/api/v1/<exchange_name>/<pair_name>/history/<delta>`\
