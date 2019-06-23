@@ -146,8 +146,6 @@ request example:
 
 responce example:
 ```
-
-
 {
   "name": "ETH\USDT",
   "exchange": "gateio",
