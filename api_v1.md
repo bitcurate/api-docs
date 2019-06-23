@@ -17,8 +17,7 @@ Currently we are working on v1 implementation, it's still work in progress and m
   `application/json`.
 
 ## Access
-For access to api endpoints please register at `https://bitcurate.com`.\
-After the email confirmaton, you will be able to use your API credentials.
+For access to api endpoints please register at `https://bitcurate.com`. After the email confirmaton, you will be able to use your API credentials.
 
 In order to get access token you would need to make POST request to `https://api.bitcurate.com/api/v1/login`
 with the request body `{"login": "user@example.com", "password": "your_password_here"}`
@@ -29,27 +28,17 @@ You would need to update your token after the expiration date.
 
 
 ## Endpoints
-
 ### Available exchanges
 
 To get the list of all available exchanges make GET request to\
 `https://api.bitcurate.com/api/v1/exchanges`
 
 responce example:
-```[{"name":"hitbtc2"},
-    {"name":"hitbtc"},
-    {"name":"binance"},
-    {"name":"huobipro"},
-    {"name":"liquid"},
-    {"name":"upbit"},
-    {"name":"zb"},
-    {"name":"exx"},
-    {"name":"lbank"},
-    {"name":"rightbtc"},
-    {"name":"bithumb"},
-    {"name":"kraken"}]
+```{"exchanges":[{"id":"1","name":"binance","pairs":["1","4"],"coins":["1","2","5"]},{"id":"2","name":"kraken","pairs":["3"],"coins":["1","4"]},{"id":"3","name":"coinbase","pairs":["2"],"coins":["1","5"]},{"id":"4","name":"bitstamp","pairs":[],"coins":[]}],"pairs":[{"id":"1","coins":["1","5"]},{"id":"2","coins":["1","5"]},{"id":"3","coins":["1","4"]},{"id":"4","coins":["2","5"]}],"coins":[{"id":"1","name":"eth"},{"id":"2","name":"btc"},{"id":"3","name":"ltc"},{"id":"4","name":"usd"},{"id":"5","name":"usdt"}]}
 ```
 
+
+---------------------------------
 ### Available coin pairs
 
 Ro get the list of all available coin pairs, for a particular exchange make GET requests to\
