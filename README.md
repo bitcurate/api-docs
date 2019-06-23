@@ -5,4 +5,4 @@
 
 Name | Description
 ------------ | ------------ 
-[api/v1](./api_v1.md) | Details on the API v1 (/api)
+[api](./api_v1.md) | Details on the API v1 (/api/v1)
