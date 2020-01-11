@@ -1,6 +1,6 @@
 # Documentation for Bitcurate Stack
 
-This is documentation to respawn all the backends incase any breakdown and to store any artifacts. **Do not share this repository to unauthorized developers!**.
+Documentation to respawn all the backends incase any breakdown and to store any artifacts. **Do not share this repository to unauthorized developers!**
 
 ## Table of contents
   * [server](#server)
@@ -50,7 +50,7 @@ Portainer is our primary docker web management, to check logs and status for our
 
 These steps are foundation, any major restart due to any circumstances (scaling instance, AWS error, or anything) need to follow these steps.
 
-1. Make sure jenkins are alive,
+### 1. Make sure jenkins are alive,
 
 ```bash
 sudo service jenkins status
@@ -64,20 +64,20 @@ Jan 06 12:27:23 ip-172-31-42-83 su[1421]: pam_unix(su:session): session opened f
 
 You are good to go.
 
-2. Visit [jenkins](http://dev.bitcurate.com:8080/),
+### 2. Visit [jenkins](http://dev.bitcurate.com:8080/),
 
 <img src="pictures/jenkins.png" width="50%">
 
-3. Trigger CD by sequence in jenkins,
+### 3. Trigger CD by sequence in jenkins,
 
 To trigger any job in jenkins, press right hand side play on selected row.
 
-    1. [Operations](#operations)
-    2. [prometheus](#prometheus)
-    3. [coins-exchanges-classifier](#coins-exchanges-classifier)
-    4. [emotion-relevancy-sarcasm-api](#emotion-relevancy-sarcasm-api)
-    5. [multilanguage-sentiment](#multilanguage-sentiment)
-    6. [summarization-news](#summarization-news)
-    7. [kafka](#kafka)
+1. [Operations](#operations)
+2. [prometheus](#prometheus)
+3. [coins-exchanges-classifier](#coins-exchanges-classifier)
+4. [emotion-relevancy-sarcasm-api](#emotion-relevancy-sarcasm-api)
+5. [multilanguage-sentiment](#multilanguage-sentiment)
+6. [summarization-news](#summarization-news)
+7. [kafka](#kafka)
 
 
