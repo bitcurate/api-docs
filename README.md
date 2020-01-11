@@ -61,7 +61,7 @@ Portainer is our primary docker web management, to check logs and status for our
 
 These steps are foundation, any major restart due to any circumstances (scaling instance, AWS error, or anything) need to follow these steps.
 
-### 1. Make sure jenkins are alive,
+#### 1. Make sure jenkins are alive,
 
 ```bash
 sudo service jenkins status
@@ -75,11 +75,11 @@ Jan 06 12:27:23 ip-172-31-42-83 su[1421]: pam_unix(su:session): session opened f
 
 You are good to go.
 
-### 2. Visit [jenkins](http://dev.bitcurate.com:8080/),
+#### 2. Visit [jenkins](http://dev.bitcurate.com:8080/),
 
 <img src="pictures/jenkins.png" width="50%">
 
-### 3. Trigger CD by sequence in jenkins,
+#### 3. Trigger CD by sequence in jenkins,
 
 To trigger any job in jenkins, press right hand side play on selected row. Make sure you follow from 1-8 one-by-one.
 
@@ -98,11 +98,11 @@ These steps should be done after [how-to-start-backend](#how-to-start-backend).
 
 These steps to start listen from Twitter, Reddit, Telegram and News, and process almost perfect minibatch realtime processing.
 
-### 1. Visit [jenkins](http://dev.bitcurate.com:8080/),
+#### 1. Visit [jenkins](http://dev.bitcurate.com:8080/),
 
 <img src="pictures/jenkins.png" width="50%">
 
-### 2. Trigger CD by sequence in jenkins,
+#### 2. Trigger CD by sequence in jenkins,
 
 To trigger any job in jenkins, press right hand side play on selected row. Make sure you follow from 1-4 one-by-one.
 
@@ -117,11 +117,11 @@ These steps should be done after [how-to-start-backend](#how-to-start-backend).
 
 These steps to start listen to Bitcoin blockchain, Ethereum gas and CCXT.
 
-### 1. Visit [jenkins](http://dev.bitcurate.com:8080/),
+#### 1. Visit [jenkins](http://dev.bitcurate.com:8080/),
 
 <img src="pictures/jenkins.png" width="50%">
 
-### 2. Trigger CD by sequence in jenkins,
+#### 2. Trigger CD by sequence in jenkins,
 
 To trigger any job in jenkins, press right hand side play on selected row. Make sure you follow from 1-2 one-by-one.
 
